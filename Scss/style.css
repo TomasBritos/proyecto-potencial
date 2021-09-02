@@ -1,1 +1,59 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  background-color: #00b2bc;
+}
+
+.header-menu {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-logo {
+  margin: 0px 10px;
+  height: 30px;
+  width: 120px;
+}
+
+.header-location {
+  padding: 4px 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3f7a82;
+}
+
+.header-location-title {
+  font-size: 15px;
+}
+
+.material-icons.md-14 {
+  font-size: 12px;
+  margin: 0px 5px;
+}
+
+.material-icons.md-35 {
+  font-size: 30px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
