@@ -1,0 +1,36 @@
+.header {
+  background-color: $primary;
+  &-menu {
+    height: 50px;
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+
+  }
+  &-logo {
+    margin: 0px 10px;
+    height: 30px;
+    width: 120px;
+  }
+  &-location {
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+    display: flex;
+    background-color: $primary-light-1;
+    &-title {
+      font-size: 15px;
+    }
+  }
+}
+.material-icons.md-14 {
+  font-size: 12px;
+      margin: 0px 5px;
+}
+
+.material-icons.md-35{
+  font-size: 30px;
+  color: white;
+}
