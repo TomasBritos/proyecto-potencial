@@ -86,4 +86,12 @@
   height: 60px;
   border-left: 1px #9d9d9d solid;
 }
+
+.main-title {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+  color: #505050;
+  margin: 10px;
+}
 /*# sourceMappingURL=style.css.map */
