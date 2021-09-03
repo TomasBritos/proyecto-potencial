@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.main {
+  padding: 0px 3%;
+}
+
 .header {
   background-color: #00b2bc;
 }
@@ -85,6 +89,10 @@
 .aside-carousel-img {
   height: 60px;
   border-left: 1px #9d9d9d solid;
+}
+
+.separator-banner {
+  width: 100%;
 }
 
 .main-title {
