@@ -11,6 +11,7 @@
     display: flex;
     padding: 30px 17px;
     justify-content: space-between;
+    overflow: auto;
     &-img {
       height: 60px;
       border-left: 1px $grey-light-1 solid;
