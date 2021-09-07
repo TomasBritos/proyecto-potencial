@@ -49,6 +49,7 @@
 
 .header-location-title {
   font-size: 15px;
+  font-weight: bold;
 }
 
 .material-icons.md-14 {
@@ -84,6 +85,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: auto;
 }
 
 .aside-carousel-img {
@@ -101,5 +103,100 @@
   font-weight: bolder;
   color: #505050;
   margin: 10px;
+}
+
+.footer-data-title {
+  color: #ece768;
+  font-weight: bolder;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.footer-suscribe-container {
+  background-color: #00b2bc;
+  height: 120px;
+}
+
+.footer-suscribe-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+}
+
+.footer-data-container {
+  background-color: #505050;
+}
+
+.footer-data-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-data-content {
+  color: white;
+  text-align: center;
+  margin: 3px 0px 30px 0px;
+  font-weight: bolder;
+}
+
+.footer-rights-text {
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: WHITE;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.footer-link {
+  color: white;
+  margin: 0px 2px;
+}
+
+.footer-hr {
+  margin: 0px 5%;
+}
+
+.footer-security {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.footer-security-img {
+  max-height: 60px;
+  padding: 2px 8px;
+}
+
+.footer-firm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 0px 20px 0px;
+}
+
+.data-name {
+  font-size: 16px;
+  color: white;
+  font-weight: bolder;
+}
+
+.material-icons.md-20 {
+  font-size: 16px;
+  color: white;
+  padding: 0px 2px;
 }
 /*# sourceMappingURL=style.css.map */
