@@ -7,13 +7,38 @@
   }
   &-suscribe-container {
     background-color: $primary;
-    height: 120px;
+    padding: 15px;
+  }
+  &-suscribe-buttonscontainer {
+    display: flex;
+    justify-content: center;
+  }
+  &-suscribe-button {
+    width: 110px;
+    height: 45px;
+    color: $primary;
+    background-color: $secondary;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: bolder;
+    border: none;
+    font-size: initial;
+  }
+  &-suscribe-email {
+    height: 45px;
+    width: 210px;
+    border-radius: 5px 0px 0px 5px;
+    border: #dee2e6 1.5px solid;
+    font-weight: bolder;
+    color: #4c4c4c;
+    font-size: 17px;
+    padding: 5px;
   }
   &-suscribe-text{
     text-align: center;
-    font-size: 18px;
     font-weight: bolder;
     color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
   }
   &-data-container{
     background-color: $grey;
