@@ -15,7 +15,6 @@ input:focus-visible {
 }
 
 .header {
-  background-color: #00b2bc;
   position: fixed;
   top: 0;
   left: 50%;
@@ -33,6 +32,7 @@ input:focus-visible {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #00b2bc;
 }
 
 .header-logo {
@@ -60,6 +60,23 @@ input:focus-visible {
 .header-location-title {
   font-size: 15px;
   font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .header-lapels {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .header-lapel {
+    height: 40px;
+    width: 18vw;
+    background-color: #ece768;
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+  }
 }
 
 .material-icons.md-14 {
