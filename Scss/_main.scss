@@ -5,15 +5,13 @@
     padding: 5px 0px 20px 0px;
   }
   &-image {
-    border: 1px solid #dee2e6 ;
+    border: 1px solid $grey-border ;
     border-radius: 10px;
     margin: 5%;
   }
   &-box {
-    border: 1px solid #dee2e6 ;
+    border: 1px solid $grey-border ;
     border-radius: 10px;
-    margin: 2%;
-    width: 45%;
   }
   &-title {
     text-align: center;
@@ -38,7 +36,7 @@
     }
     &-button {
       height: 40px;
-      width: 55px;
+      width: 40px;
       border-radius: 50%;
       border: 1px solid #d0d0d0;
       background-color: white;
@@ -46,7 +44,7 @@
     }
   }
   &-buy {
-    background-color: #FF9800;
+    background-color: $accent-light-1;
     border: none;
     border-radius: 5px;
     display: flex;
@@ -59,10 +57,44 @@
       padding: 5px 0px 0px 0px;
     }
   }
+
+  @media (min-width: 768px) {
+    &-flexbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    &-quantity {
+      justify-content: center;
+      padding: 10px 10px 25px 10px;
+    }
+    &-quantity-button {
+      height: 30px;
+      width: 30px;
+    }
+    &-quantity-input {
+      font-size: 16px;
+    }
+    &-buy {
+      width: 55px;
+      margin: 0px auto 16px;
+    }
+    &-buy-button {
+      width: 90%;
+    }
+    &-box {
+      height: 415px;
+    }
+    &-picture {
+      max-height: 190px;
+      max-width: 190px;
+    }
+  }
 }
 .buy-button {
   border: none; 
-  background-color: #FF9800;
+  background-color: $accent-light-1;
   padding: 8px 0px 4px 0px;
 }
 
@@ -74,14 +106,30 @@
   &-button {
     height: 30px;
     width: 90px;
-    border: 1.5px solid #00b2bc;
+    border: 1.5px solid $primary;
     background-color: #e0f0fb;
     font-weight: bolder;
     border-radius: 2px;
   }
   
 }
-.main-carousel {
-  display: flex;
-  justify-content: space-evenly;
+.main {
+  &-carousel {
+    display: flex;
+    overflow: auto;
+    column-gap: 20px;
+  }
+  &-title {
+    font-size: 25px;
+    text-align: left;
+    font-weight: bolder;
+    color: $grey;
+    margin: 20px 10px 15px 10px;
+  }
 }
+
+
+
+
+    
+  
