@@ -7,7 +7,7 @@
 }
 
 .main {
-  padding: 0px 3%;
+  padding: 0px 15px;
 }
 
 input:focus-visible {
@@ -74,7 +74,6 @@ input:focus-visible {
 
 .aside {
   width: 100%;
-  height: 510px;
 }
 
 .aside-banner-slidable {
@@ -106,14 +105,8 @@ input:focus-visible {
 
 .separator-banner {
   width: 100%;
-}
-
-.main-title {
-  font-size: 25px;
-  text-align: center;
-  font-weight: bolder;
-  color: #505050;
-  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .footer-data-title {
@@ -126,6 +119,7 @@ input:focus-visible {
 .footer-suscribe-container {
   background-color: #00b2bc;
   padding: 15px;
+  margin-top: 30px;
 }
 
 .footer-suscribe-buttonscontainer {
@@ -164,6 +158,7 @@ input:focus-visible {
   font-weight: bolder;
   color: white;
   margin-bottom: 10px;
+  margin-top: 16px;
   font-size: 16px;
 }
 
@@ -258,8 +253,6 @@ input:focus-visible {
 .product-box {
   border: 1px solid #dee2e6;
   border-radius: 10px;
-  margin: 2%;
-  width: 45%;
 }
 
 .product-title {
@@ -294,7 +287,7 @@ input:focus-visible {
 
 .product-quantity-button {
   height: 40px;
-  width: 55px;
+  width: 40px;
   border-radius: 50%;
   border: 1px solid #d0d0d0;
   background-color: white;
@@ -321,6 +314,48 @@ input:focus-visible {
 .product-buy-shopcar {
   color: white;
   padding: 5px 0px 0px 0px;
+}
+
+@media (min-width: 768px) {
+  .product-flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  .product-quantity {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 10px 25px 10px;
+  }
+  .product-quantity-button {
+    height: 30px;
+    width: 30px;
+  }
+  .product-quantity-input {
+    font-size: 16px;
+  }
+  .product-buy {
+    width: 55px;
+    margin: 0px auto 16px;
+  }
+  .product-buy-button {
+    width: 90%;
+  }
+  .product-box {
+    height: 415px;
+  }
+  .product-picture {
+    max-height: 190px;
+    max-width: 190px;
+  }
 }
 
 .buy-button {
@@ -351,13 +386,91 @@ input:focus-visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  overflow: auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.main-title {
+  font-size: 25px;
+  text-align: left;
+  font-weight: bolder;
+  color: #505050;
+  margin: 20px 10px 15px 10px;
 }
 
 .signika {
   font-family: 'Signika', sans-serif;
   font-weight: 600;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none;
+  }
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .d-xl-none {
+    display: none;
+  }
+  .d-xl-block {
+    display: block;
+  }
+  .d-xl-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */
