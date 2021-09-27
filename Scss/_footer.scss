@@ -5,15 +5,18 @@
     text-align: center;
     padding: 30px 0px;
   }
+
   &-suscribe-container {
     background-color: $primary;
     padding: 15px;
     margin-top: 30px;
   }
+
   &-suscribe-buttonscontainer {
     display: flex;
     justify-content: center;
   }
+
   &-suscribe-button {
     width: 110px;
     height: 45px;
@@ -23,7 +26,9 @@
     font-weight: bolder;
     border: none;
     font-size: initial;
+    font-size: 14px;
   }
+
   &-suscribe-email {
     height: 45px;
     width: 210px;
@@ -34,6 +39,7 @@
     font-size: 17px;
     padding: 5px;
   }
+
   &-suscribe-text{
     text-align: center;
     font-weight: bolder;
@@ -42,13 +48,16 @@
     margin-top: 16px;
     font-size: 16px;
   }
+
   &-data-container{
     background-color: $grey;
   }
+
   &-data-p {
     display: flex;
     justify-content: center;
   }
+
   &-data-content {
     color: white;
     text-align: center;
@@ -61,31 +70,84 @@
     text-align: center;
     text-decoration: none;
     color: WHITE;
-    font-size: 9px;
+    font-size: 16px;
     font-weight: bold;
   }
+
   &-link {
     color: white;
     margin: 0px 2px;
   }
+
   &-hr {
     margin: 0px 5%;
   }
+
   &-security {
     justify-content: center;
     height: 60px;
     display: flex;
     margin-bottom: 15px;
   }
+
   &-security-img {
     max-height: 60px;
     padding: 2px 8px;
   }
+
   &-firm {
     display: flex;
     justify-content: center;
     padding: 8px 0px 20px 0px;
   }
+
+  @media (min-width: 992px) {
+    &-suscribe-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-suscribe-email {
+      width: 400px;
+    }
+
+    &-data-content {
+      text-align: left;
+    }
+
+    &-data {
+      margin: 0px 50px;
+    }
+
+    &-data-p {
+      justify-content: left;
+    }
+
+    &-data-title {
+      text-align: left;
+    }
+
+    &-security {
+      justify-content: flex-end;
+    }
+
+    &-992px {
+    color: white;
+    font-weight: bolder; 
+    margin: 0px 30px;
+    }
+
+    &-992px-data2 {
+      padding: 80px 0px 0px 50px;
+    }
+
+    &-992px-word {
+      color: white;
+      font-weight: bolder;
+      margin: 25px 0px;
+    }
+
+   }
 }
 .data-name {
   font-size: 16px;

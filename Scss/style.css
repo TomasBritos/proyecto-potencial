@@ -76,6 +76,7 @@ input:focus-visible {
     text-align: center;
     font-weight: 600;
     padding: 10px;
+    color: #4a4343;
   }
 }
 
@@ -157,6 +158,7 @@ input:focus-visible {
   font-weight: bolder;
   border: none;
   font-size: initial;
+  font-size: 14px;
 }
 
 .footer-suscribe-email {
@@ -204,7 +206,7 @@ input:focus-visible {
   text-align: center;
   text-decoration: none;
   color: WHITE;
-  font-size: 9px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -241,6 +243,52 @@ input:focus-visible {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 8px 0px 20px 0px;
+}
+
+@media (min-width: 992px) {
+  .footer-suscribe-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-suscribe-email {
+    width: 400px;
+  }
+  .footer-data-content {
+    text-align: left;
+  }
+  .footer-data {
+    margin: 0px 50px;
+  }
+  .footer-data-p {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .footer-data-title {
+    text-align: left;
+  }
+  .footer-security {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer-992px {
+    color: white;
+    font-weight: bolder;
+    margin: 0px 30px;
+  }
+  .footer-992px-data2 {
+    padding: 80px 0px 0px 50px;
+  }
+  .footer-992px-word {
+    color: white;
+    font-weight: bolder;
+    margin: 25px 0px;
+  }
 }
 
 .data-name {
