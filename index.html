@@ -15,34 +15,43 @@
 
 <body>
   <header class="header">
-    <div class="header-menu">
+    <div class="header-menu mxw">
       <div class="header-left">
-        <span class="material-icons md-35">
+        <span class="material-icons md-35 md-992">
           menu
         </span>
         <img class="header-logo" src="/imgs/amigazoos_logo.png" alt="LOGO">
       </div>
-    <div class="header-right">
-      <div class="992px-location d-none d-lg-flex">
-        <span class="material-icons md-14 d-none d-lg-block">
-          room
-        </span>
-        <p class="992px-location-title">
-          Enviar a: ROSARIO
-        </p>
-      </div>
-      <span class="material-icons md-35 d-lg-none">
-        search
-      </span>
-      <span class="material-icons md-35">
-        account_circle
-        </span>
-      <span class="material-icons md-35">
-        shopping_cart
-      </span>
-    </div>
-    </div>
 
+      <div class="header-center d-none d-lg-flex">
+        <div class="header-992px-location">
+          <span class="material-icons md-14 d-lg-block">
+            room
+          </span>
+          <p class="992px-location-title">
+            Enviar a: ROSARIO
+          </p>
+        </div>
+        <div class="header-992px-browser">
+          <input class="header-992px-searchbar" type="text" placeholder="Buscar">
+          <span class="material-icons md-35 md-11">
+            search
+          </span>
+
+        </div>
+      </div>
+       <div class="header-right">
+          <span class="material-icons md-35 md-992">
+            search
+          </span>
+          <span class="material-icons md-35 md-8">
+            account_circle
+            </span>
+          <span class="material-icons md-35 md-8">
+            shopping_cart
+          </span>
+      </div>
+    </div>
 
     <div class="header-location d-lg-none">
       <span class="material-icons md-14">
@@ -51,14 +60,14 @@
       <p class="header-location-title">
         Enviar a: ROSARIO <!--!UBICACION CON JS!--> </p>
     </div>
-    <div class="header-lapels d-none d-lg-flex">
-      <buttton class="header-lapel">PERROS</buttton>
-      <buttton class="header-lapel">GATOS</buttton>
-      <buttton class="header-lapel">PECES</buttton>
-      <buttton class="header-lapel">ROEDORES</buttton>
-      <buttton class="header-lapel">PAJAROS</buttton>
-    </div>
   </header>
+  <div class="header-lapels d-none d-lg-flex mxw">
+    <buttton class="header-lapel signika">PERROS</buttton>
+    <buttton class="header-lapel signika">GATOS</buttton>
+    <buttton class="header-lapel signika">PECES</buttton>
+    <buttton class="header-lapel signika">ROEDORES</buttton>
+    <buttton class="header-lapel signika">PAJAROS</buttton>
+  </div>
 
   <aside class="aside">
     <Div class="aside-banner-slidable">

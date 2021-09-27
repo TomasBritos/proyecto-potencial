@@ -119,6 +119,7 @@
     overflow: auto;
     column-gap: 20px;
   }
+
   &-title {
     font-size: 25px;
     text-align: left;
@@ -128,6 +129,13 @@
   }
 }
 
+.main-carousel::-webkit-scrollbar {
+  height: 3px;
+}
+
+.main-carousel::-webkit-scrollbar-track {
+  color: $grey-light-1;
+}
 
 
 

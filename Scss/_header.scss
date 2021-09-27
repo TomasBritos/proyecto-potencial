@@ -4,19 +4,27 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  background-color: $primary;
+
   &-menu {
-    height: 50px;
     display: flex;
     padding: 10px 10px;
     justify-content: space-between;
-    background-color: $primary;
-
+    margin: auto;
   }
+
   &-logo {
     margin: 0px 10px;
     height: 30px;
     width: 120px;
   }
+
+  &-right {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+  }
+
   &-location {
     padding: 4px 8px;
     justify-content: center;
@@ -25,15 +33,46 @@
     height: 30px;
     display: flex;
     background-color: $primary-light-1;
+
     &-title {
       font-size: 15px;
       font-weight: bold;
     }
   }
   @media (min-width: 992px) {
+    &-logo {
+      margin: 10px;
+      height: 50px;
+      width: 200px;
+    }
+
+    &-center {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      margin-right: auto;
+      padding-left: 25px;
+      width: 100%;
+    }
+
+    &-right {
+      display: flex;
+      align-items: flex-end;
+      
+    }
+
     &-lapels {
       justify-content: space-evenly;
+      position: fixed;
+      top: 94px;
+      width: 100%;
+      margin: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      column-gap: 15px;
     }
+
     &-lapel {
       height: 40px;
       width: 18vw;
@@ -44,14 +83,71 @@
       padding: 10px;
       color: #4a4343;
     }
+
+    &-center {
+      display: block;
+    }
+
+    &-992px-location {
+      display: -webkit-inline-box;
+      background-color: $primary-light-1;
+      height: 25px;
+      text-align: center;
+      font-size: 13px;
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 20px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 140px;
+    }
+
+    &-992px-browser {
+      display: flex;
+      width: 100%;
+    }
+
+    &-992px-searchbar {
+      border: none;
+      border-radius: 5px 0px 0px 5px;
+      padding: 2px 10px;
+      font-weight: 600;
+      width: 100%;
+    }
+    }
   }
-}
+
 .material-icons.md-14 {
   font-size: 12px;
-      margin: 0px 5px;
+  margin: 0px 5px;
 }
 
 .material-icons.md-35{
   font-size: 30px;
   color: white;
+  padding: 0px 2px;
+}
+
+@media (min-width: 992px) {
+  .material-icons.md-992 {
+    display: none;
+  }
+
+  .material-icons.md-14 {
+    display: flex;
+    align-items: center;
+  }
+
+  .material-icons.md-11 {
+    background-color: white;
+    color: black;
+    border-radius: 0px 5px 5px 0px;
+    height: 32px;
+  }
+
+  .material-icons.md-8 {
+    padding: 5px;
+  }
 }

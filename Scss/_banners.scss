@@ -17,6 +17,11 @@
       border-left: 1px $grey-light-1 solid;
     }
   }
+  @media (min-width: 992px) {
+    &-banner-img {
+      padding: 90px 0px 0px 0px;
+    }
+  }
 }
 
 .separator-banner {
@@ -24,3 +29,8 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+.aside-carousel::-webkit-scrollbar {
+  height: 3px;
+} 
+  
