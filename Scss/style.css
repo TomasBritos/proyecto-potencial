@@ -583,6 +583,14 @@ input:focus-visible {
   margin: 20px 10px 15px 10px;
 }
 
+@media (min-width: 1200px) {
+  .main-carousel {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .main-carousel::-webkit-scrollbar {
   height: 3px;
 }

@@ -127,6 +127,12 @@
     color: $grey;
     margin: 20px 10px 15px 10px;
   }
+
+  @media (min-width: 1200px) {
+    &-carousel {
+      justify-content: center;
+    }
+  }
 }
 
 .main-carousel::-webkit-scrollbar {
