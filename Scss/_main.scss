@@ -3,23 +3,26 @@
     width: 100%;
     border-radius: 12px;
     padding: 5px 0px 20px 0px;
+    background-color: white;
   }
   &-image {
-    border: 1px solid $grey-border ;
+    border: 1px solid $border-dk ;
     border-radius: 10px;
     margin: 5%;
+    background-color: white;
   }
   &-box {
-    border: 1px solid $grey-border ;
+    border: 1px solid $border-dk ;
     border-radius: 10px;
   }
   &-title {
     text-align: center;
     margin: 0px 0px 40px 0px;
+    color: $letters-dk;
   }
   &-prize {
     text-align: center;
-    color: $primary;
+    color: $accent;
     font-weight: bolder;
     margin: 10px;
   }
@@ -33,18 +36,21 @@
       text-align: center;
       font-weight: bolder;
       font-size: 18px;
+      background-color: $primary;
+      color: white;
     }
     &-button {
       height: 40px;
       width: 40px;
       border-radius: 50%;
-      border: 1px solid #d0d0d0;
-      background-color: white;
+      border: none;
+      background-color: $primary-light-1;
+      color: white;
       font-weight: bolder;
     }
   }
   &-buy {
-    background-color: $accent-light-1;
+    background-color: #cb7900;
     border: none;
     border-radius: 5px;
     display: flex;
@@ -55,6 +61,7 @@
     &-shopcar {
       color: white;
       padding: 5px 0px 0px 0px;
+      background-color: transparent;
     }
   }
 
@@ -79,9 +86,13 @@
     &-buy {
       width: 55px;
       margin: 0px auto 16px;
+      background-color: transparent;
     }
     &-buy-button {
       width: 90%;
+    }
+    &-buy-shopcar {
+      color: $accent-light-1;
     }
     &-box {
       height: 415px;
@@ -94,7 +105,7 @@
 }
 .buy-button {
   border: none; 
-  background-color: $accent-light-1;
+  background-color: transparent;
   padding: 8px 0px 4px 0px;
 }
 
@@ -106,7 +117,7 @@
   &-button {
     height: 30px;
     width: 90px;
-    border: 1.5px solid $primary;
+    border: 1.5px solid $border-dk;
     background-color: #e0f0fb;
     font-weight: bolder;
     border-radius: 2px;
@@ -124,13 +135,17 @@
     font-size: 25px;
     text-align: left;
     font-weight: bolder;
-    color: $grey;
+    color: $letters-dk;
     margin: 20px 10px 15px 10px;
   }
 
   @media (min-width: 1200px) {
     &-carousel {
       justify-content: center;
+    }
+    &-title {
+      font-size: 35px;
+      text-align: center;
     }
   }
 }

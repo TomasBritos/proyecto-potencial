@@ -14,6 +14,10 @@ input:focus-visible {
   outline: 1.5px solid #3f7a82;
 }
 
+.body {
+  background-color: #1e2e30;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -21,7 +25,7 @@ input:focus-visible {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
-  background-color: #00b2bc;
+  background-color: #0d4249;
 }
 
 .header-menu {
@@ -126,6 +130,9 @@ input:focus-visible {
     font-weight: 600;
     padding: 10px;
     color: #4a4343;
+  }
+  .header-lapel:hover {
+    background-color: black;
   }
   .header-center {
     display: block;
@@ -239,6 +246,8 @@ input:focus-visible {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aside-carousel::-webkit-scrollbar {
@@ -253,7 +262,7 @@ input:focus-visible {
 }
 
 .footer-suscribe-container {
-  background-color: #00b2bc;
+  background-color: #0d4249;
   padding: 15px;
   margin-top: 30px;
 }
@@ -270,7 +279,7 @@ input:focus-visible {
 .footer-suscribe-button {
   width: 110px;
   height: 45px;
-  color: #00b2bc;
+  color: #3f7a82;
   background-color: #ece768;
   border-radius: 0px 5px 5px 0px;
   font-weight: bolder;
@@ -293,14 +302,14 @@ input:focus-visible {
 .footer-suscribe-text {
   text-align: center;
   font-weight: bolder;
-  color: white;
+  color: #ddd7d7;
   margin-bottom: 10px;
   margin-top: 16px;
   font-size: 16px;
 }
 
 .footer-data-container {
-  background-color: #505050;
+  background-color: #343434;
 }
 
 .footer-data-p {
@@ -313,7 +322,7 @@ input:focus-visible {
 }
 
 .footer-data-content {
-  color: white;
+  color: #ddd7d7;
   text-align: center;
   margin: 3px 0px 30px 0px;
   font-weight: bolder;
@@ -323,14 +332,14 @@ input:focus-visible {
   margin-top: 20px;
   text-align: center;
   text-decoration: none;
-  color: WHITE;
+  color: #ddd7d7;
   font-size: 16px;
   font-weight: bold;
   padding: 5px;
 }
 
 .footer-link {
-  color: white;
+  color: #ddd7d7;
   margin: 0px 2px;
 }
 
@@ -396,7 +405,7 @@ input:focus-visible {
             justify-content: flex-end;
   }
   .footer-992px {
-    color: white;
+    color: #ddd7d7;
     font-weight: bolder;
     margin: 0px 30px;
   }
@@ -404,7 +413,7 @@ input:focus-visible {
     padding: 80px 0px 0px 50px;
   }
   .footer-992px-word {
-    color: white;
+    color: #ddd7d7;
     font-weight: bolder;
     margin: 25px 0px;
   }
@@ -418,7 +427,7 @@ input:focus-visible {
 
 .material-icons.md-20 {
   font-size: 16px;
-  color: white;
+  color: #ddd7d7;
   padding: 0px 2px;
 }
 
@@ -426,27 +435,30 @@ input:focus-visible {
   width: 100%;
   border-radius: 12px;
   padding: 5px 0px 20px 0px;
+  background-color: white;
 }
 
 .product-image {
-  border: 1px solid #dee2e6;
+  border: 1px solid #666666;
   border-radius: 10px;
   margin: 5%;
+  background-color: white;
 }
 
 .product-box {
-  border: 1px solid #dee2e6;
+  border: 1px solid #666666;
   border-radius: 10px;
 }
 
 .product-title {
   text-align: center;
   margin: 0px 0px 40px 0px;
+  color: #ddd7d7;
 }
 
 .product-prize {
   text-align: center;
-  color: #00b2bc;
+  color: #16bfd5;
   font-weight: bolder;
   margin: 10px;
 }
@@ -467,19 +479,22 @@ input:focus-visible {
   text-align: center;
   font-weight: bolder;
   font-size: 18px;
+  background-color: #1e2e30;
+  color: white;
 }
 
 .product-quantity-button {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  border: 1px solid #d0d0d0;
-  background-color: white;
+  border: none;
+  background-color: #3f7a82;
+  color: white;
   font-weight: bolder;
 }
 
 .product-buy {
-  background-color: #FF9800;
+  background-color: #cb7900;
   border: none;
   border-radius: 5px;
   display: -webkit-box;
@@ -498,6 +513,7 @@ input:focus-visible {
 .product-buy-shopcar {
   color: white;
   padding: 5px 0px 0px 0px;
+  background-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -529,9 +545,13 @@ input:focus-visible {
   .product-buy {
     width: 55px;
     margin: 0px auto 16px;
+    background-color: transparent;
   }
   .product-buy-button {
     width: 90%;
+  }
+  .product-buy-shopcar {
+    color: #FF9800;
   }
   .product-box {
     height: 415px;
@@ -544,7 +564,7 @@ input:focus-visible {
 
 .buy-button {
   border: none;
-  background-color: #FF9800;
+  background-color: transparent;
   padding: 8px 0px 4px 0px;
 }
 
@@ -560,7 +580,7 @@ input:focus-visible {
 .weight-button {
   height: 30px;
   width: 90px;
-  border: 1.5px solid #00b2bc;
+  border: 1.5px solid #666666;
   background-color: #e0f0fb;
   font-weight: bolder;
   border-radius: 2px;
@@ -579,7 +599,7 @@ input:focus-visible {
   font-size: 25px;
   text-align: left;
   font-weight: bolder;
-  color: #505050;
+  color: #ddd7d7;
   margin: 20px 10px 15px 10px;
 }
 
@@ -588,6 +608,10 @@ input:focus-visible {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .main-title {
+    font-size: 35px;
+    text-align: center;
   }
 }
 
