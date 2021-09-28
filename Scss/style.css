@@ -132,7 +132,7 @@ input:focus-visible {
     color: #4a4343;
   }
   .header-lapel:hover {
-    background-color: black;
+    background-color: #1e2e30;
   }
   .header-center {
     display: block;
