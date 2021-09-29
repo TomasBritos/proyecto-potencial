@@ -4,29 +4,35 @@
     border-radius: 12px;
     padding: 5px 0px 20px 0px;
   }
+
   &-image {
     border: 1px solid $grey-border ;
     border-radius: 10px;
     margin: 5%;
   }
+
   &-box {
     border: 1px solid $grey-border ;
     border-radius: 10px;
   }
+
   &-title {
     text-align: center;
     margin: 0px 0px 40px 0px;
   }
+
   &-prize {
     text-align: center;
     color: $primary;
     font-weight: bolder;
     margin: 10px;
   }
+
   &-quantity {
     display: flex;
     justify-content: center;
     padding: 15px;
+
     &-input {
       width: 40px;
       border: none;
@@ -34,6 +40,7 @@
       font-weight: bolder;
       font-size: 18px;
     }
+
     &-button {
       height: 40px;
       width: 40px;
@@ -43,6 +50,7 @@
       font-weight: bolder;
     }
   }
+
   &-buy {
     background-color: $accent-light-1;
     border: none;
@@ -52,6 +60,7 @@
     align-items: center;
     width: 85%;
     margin: 0px auto 16px;
+    
     &-shopcar {
       color: white;
       padding: 5px 0px 0px 0px;
@@ -65,27 +74,34 @@
       align-items: center;
       margin-top: 30px;
     }
+
     &-quantity {
       justify-content: center;
       padding: 10px 10px 25px 10px;
     }
+
     &-quantity-button {
       height: 30px;
       width: 30px;
     }
+
     &-quantity-input {
       font-size: 16px;
     }
+
     &-buy {
       width: 55px;
       margin: 0px auto 16px;
     }
+
     &-buy-button {
       width: 90%;
     }
+
     &-box {
       height: 415px;
     }
+
     &-picture {
       max-height: 190px;
       max-width: 190px;
@@ -103,6 +119,7 @@
     display: flex;
     justify-content: center;
   }
+
   &-button {
     height: 30px;
     width: 90px;
@@ -111,7 +128,6 @@
     font-weight: bolder;
     border-radius: 2px;
   }
-  
 }
 .main {
   &-carousel {
@@ -131,6 +147,11 @@
   @media (min-width: 1200px) {
     &-carousel {
       justify-content: center;
+    }
+
+    &-title {
+      text-align: center;
+      font-size: 35px;
     }
   }
 }

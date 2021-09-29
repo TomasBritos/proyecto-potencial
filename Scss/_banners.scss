@@ -1,22 +1,26 @@
 .aside {
   width: 100%;
-  &-banner-slidable {
-    display: flex;
-  }
+
+
   &-banner-img {
     width: 100%;
+    height: 100%;
     padding: 80px 0px 0px 0px;
   }
+
   &-carousel {
     display: flex;
     padding: 30px 17px;
     justify-content: space-between;
     overflow: auto;
+    perspective: 100px;
+
     &-img {
       height: 60px;
       border-left: 1px $grey-light-1 solid;
     }
   }
+  
   @media (min-width: 992px) {
     &-banner-img {
       padding: 90px 0px 0px 0px;
@@ -28,9 +32,14 @@
   width: 100%;
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aside-carousel::-webkit-scrollbar {
   height: 3px;
 } 
-  
+
+.aside-carousel-img:hover {
+  transform: translateZ(20px);
+}

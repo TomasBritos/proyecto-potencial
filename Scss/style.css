@@ -14,6 +14,23 @@ input:focus-visible {
   outline: 1.5px solid #3f7a82;
 }
 
+.w100 {
+  width: 100%;
+}
+
+.swiper {
+  padding-top: 94px !important;
+}
+
+.swiper-slide {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -22,6 +39,7 @@ input:focus-visible {
           transform: translateX(-50%);
   width: 100%;
   background-color: #00b2bc;
+  z-index: 2;
 }
 
 .header-menu {
@@ -116,6 +134,7 @@ input:focus-visible {
             transform: translateX(-50%);
     -webkit-column-gap: 15px;
             column-gap: 15px;
+    z-index: 2;
   }
   .header-lapel {
     height: 40px;
@@ -202,14 +221,9 @@ input:focus-visible {
   width: 100%;
 }
 
-.aside-banner-slidable {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .aside-banner-img {
   width: 100%;
+  height: 100%;
   padding: 80px 0px 0px 0px;
 }
 
@@ -222,6 +236,8 @@ input:focus-visible {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
+  -webkit-perspective: 100px;
+          perspective: 100px;
 }
 
 .aside-carousel-img {
@@ -239,10 +255,17 @@ input:focus-visible {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aside-carousel::-webkit-scrollbar {
   height: 3px;
+}
+
+.aside-carousel-img:hover {
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
 }
 
 .footer-data-title {
@@ -589,6 +612,10 @@ input:focus-visible {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .main-title {
+    text-align: center;
+    font-size: 35px;
+  }
 }
 
 .main-carousel::-webkit-scrollbar {
@@ -676,5 +703,12 @@ input:focus-visible {
 
 .mxw {
   max-width: 1440px;
+}
+
+.center-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

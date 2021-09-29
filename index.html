@@ -5,16 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Scss/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./swiper.js">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <title>Amigasoo</title>
 </head>
 
 <body>
   <header class="header">
+
     <div class="header-menu mxw">
       <div class="header-left">
         <span class="material-icons md-35 md-992">
@@ -32,14 +35,15 @@
             Enviar a: ROSARIO
           </p>
         </div>
+
         <div class="header-992px-browser">
           <input class="header-992px-searchbar" type="text" placeholder="Buscar">
           <span class="material-icons md-35 md-11">
             search
           </span>
-
         </div>
       </div>
+
        <div class="header-right">
           <span class="material-icons md-35 md-992">
             search
@@ -61,6 +65,7 @@
         Enviar a: ROSARIO <!--!UBICACION CON JS!--> </p>
     </div>
   </header>
+
   <div class="header-lapels d-none d-lg-flex mxw">
     <buttton class="header-lapel signika">PERROS</buttton>
     <buttton class="header-lapel signika">GATOS</buttton>
@@ -70,25 +75,57 @@
   </div>
 
   <aside class="aside">
-    <Div class="aside-banner-slidable">
-      <img class="aside-banner-img d-md-none" src="./imgs/banner-360.png" alt="FOTO1 BANNER">
-      <img class="aside-banner-img d-none d-md-block" src="./imgs/amigazoo-perro-banner.png" alt="">
-      <!-- <img class="aside-banner-img" src="./imgs/amigazoo-perroEnCaja-banner.png" alt="FOTO3 BANNER"> -->
-      <!-- <img class="aside-banner-img" src="./imgs/amigazoo-perro-banner.png" alt="FOTO3 BANNER"> -->
-    </Div>
+       <!-- Slider main container -->
+    <div class="swiper d-none d-lg-block">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper ">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class="w100" src="./imgs/Banners_Slide- desktop.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img class="w100" src="./imgs/Banners_Slide- desktop2.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="aside-banner-slidable d-block d-lg-none">
+      <img class="aside-banner-img" src="./imgs/banner-360.png" alt="FOTO1 BANNER">
+    </div>
+
+    <!-- --------------------------ASIDE-SLIDEABLE-------------------------- -->
+    
+    <!-- --------------------------ASIDE-SLIDEABLE-------------------------- -->
     <div class="aside-carousel">
       <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA1">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA2">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA3">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA4">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA5">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA6">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA7">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA8">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA9">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA10">
+      <img class="aside-carousel-img" src="./imgs/Marcas_nutrique.png" alt="MARCA2">
+      <img class="aside-carousel-img" src="./imgs/Marcas_pedigree.png" alt="MARCA3">
+      <img class="aside-carousel-img" src="./imgs/Marcas_Purina pro plan.png" alt="MARCA4">
+      <img class="aside-carousel-img" src="./imgs/Marcas_Sieger.png" alt="MARCA5">
+      <img class="aside-carousel-img" src="./imgs/Marcas_Unik.png" alt="MARCA6">
+      <img class="aside-carousel-img" src="./imgs/Marcas_VC-Balanced-05.png" alt="MARCA7">
+      <img class="aside-carousel-img" src="./imgs/Marcas_VC-therapy.png" alt="MARCA8">
+      <img class="aside-carousel-img" src="./imgs/Marcas_Eukanuba.png" alt="MARCA9">
+      <img class="aside-carousel-img" src="/imgs/Marcas_Maxxium.png" alt="MARCA10">
     </div>
   </aside>
+  <script>
+    const swiper = new Swiper('.swiper', {
+
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+  </script>
 
   <main class="main">
     <div class="main-title">
@@ -101,8 +138,8 @@
         Promos para perros
       </p>
     </div>
-    <div class="main-container">
-      <div class="main-carousel">
+    <class class="main-container">
+      <div class="main-carousel ">
         <div class="product-box">
           <div class="product-image">
             <img class="product-picture" src="./imgs/producto_ejemplo.jpg" alt="FOTO DEL PRODUCTO">
@@ -283,12 +320,11 @@
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   </div>
-  <img class="separator-banner d-sm-none" src="./imgs/banner-360-pelotita.png" alt="SEPARATOR BANNER">
-  <img class="separator-banner d-none d-sm-block" src="./imgs/middle-banner-dalmata.png" alt="SEPARATOR BANNER">
+  <img class="separator-banner d-sm-none mxw" src="./imgs/banner-360-pelotita.png" alt="SEPARATOR BANNER">
+  <img class="separator-banner d-none d-sm-block mxw" src="./imgs/middle-banner-dalmata.png" alt="SEPARATOR BANNER">
  </div> 
     <div class="main-title">
       <p>
@@ -479,8 +515,8 @@
         </div>
       </div>
     </div>
-       <img class="separator-banner d-sm-none" src="./imgs/banner-360-texto.png" alt="SEPARATOR BANNER">
-       <img class="separator-banner d-none d-sm-block" src="./imgs/middle-banner-cucha.png" alt="SEPARATOR BANNER">
+       <img class="separator-banner d-sm-none mxw" src="./imgs/banner-360-texto.png" alt="SEPARATOR BANNER">
+       <img class="separator-banner d-none d-sm-block mxw" src="./imgs/middle-banner-cucha.png" alt="SEPARATOR BANNER">
       </div>    
     <div class="main-title">
       <p>
@@ -953,7 +989,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
 <!-- "Cuando escribi este codigo solo Dios y yo sabiamos cómo y para qué lo hice. Ahora, solo Dios lo sabe"-->

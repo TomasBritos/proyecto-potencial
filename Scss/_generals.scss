@@ -12,3 +12,15 @@
 input:focus-visible {
   outline: 1.5px solid $primary-light-1;
 }
+
+.w100 {
+  width: 100%;
+}
+
+.swiper {
+  padding-top: 94px !important;
+  &-slide {
+    justify-content: center;
+    display: flex;
+  }
+}
