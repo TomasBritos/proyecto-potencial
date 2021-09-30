@@ -5,6 +5,7 @@
   transform: translateX(-50%);
   width: 100%;
   background-color: $primary-dk;
+  z-index: 2;
 
   &-menu {
     display: flex;
@@ -72,6 +73,7 @@
       left: 50%;
       transform: translateX(-50%);
       column-gap: 15px;
+      z-index: 2;
     }
 
     &-lapel {

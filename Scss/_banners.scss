@@ -6,6 +6,7 @@
   &-banner-img {
     width: 100%;
     padding: 80px 0px 0px 0px;
+    max-height: 650px;
   }
   &-carousel {
     display: flex;
@@ -35,4 +36,8 @@
 .aside-carousel::-webkit-scrollbar {
   height: 3px;
 } 
-  
+
+.w100 {
+  width: 100%;
+  padding: 90px 0px 0px 0px;
+}
