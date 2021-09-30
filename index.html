@@ -10,6 +10,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <title>Amigasoo</title>
 </head>
 
@@ -70,25 +72,56 @@
   </div>
 
   <aside class="aside">
-    <Div class="aside-banner-slidable">
-      <img class="aside-banner-img d-md-none mxw" src="./imgs/banner-360.png" alt="FOTO1 BANNER">
-      <img class="aside-banner-img d-none d-md-block " src="./imgs/amigazoo-perro-banner.png" alt="">
-      <!-- <img class="aside-banner-img" src="./imgs/amigazoo-perroEnCaja-banner.png" alt="FOTO3 BANNER"> -->
-      <!-- <img class="aside-banner-img" src="./imgs/amigazoo-perro-banner.png" alt="FOTO3 BANNER"> -->
-    </Div>
-    <div class="aside-carousel">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA1">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA2">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA3">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA4">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA5">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA6">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA7">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA8">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA9">
-      <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA10">
-    </div>
-  </aside>
+    <!-- Slider main container -->
+ <div class="swiper d-none d-lg-block">
+   <!-- Additional required wrapper -->
+   <div class="swiper-wrapper ">
+     <!-- Slides -->
+     <div class="swiper-slide">
+       <img class="w100" src="./imgs/Banners_Slide- desktop.png" alt="">
+     </div>
+     <div class="swiper-slide">
+       <img class="w100" src="./imgs/Banners_Slide- desktop2.png" alt="">
+     </div>
+   </div>
+   <div class="swiper-pagination"></div>
+ </div>
+
+ <div class="aside-banner-slidable d-block d-lg-none">
+   <img class="aside-banner-img" src="./imgs/banner-360.png" alt="FOTO1 BANNER">
+ </div>
+
+ <!-- --------------------------ASIDE-SLIDEABLE-------------------------- -->
+ 
+ <!-- --------------------------ASIDE-SLIDEABLE-------------------------- -->
+ <div class="aside-carousel">
+   <img class="aside-carousel-img" src="./imgs/marca_muestra.png" alt="MARCA1">
+   <img class="aside-carousel-img" src="./imgs/Marcas_nutrique.png" alt="MARCA2">
+   <img class="aside-carousel-img" src="./imgs/Marcas_pedigree.png" alt="MARCA3">
+   <img class="aside-carousel-img" src="./imgs/Marcas_Purina pro plan.png" alt="MARCA4">
+   <img class="aside-carousel-img" src="./imgs/Marcas_Sieger.png" alt="MARCA5">
+   <img class="aside-carousel-img" src="./imgs/Marcas_Unik.png" alt="MARCA6">
+   <img class="aside-carousel-img" src="./imgs/Marcas_VC-Balanced-05.png" alt="MARCA7">
+   <img class="aside-carousel-img" src="./imgs/Marcas_VC-therapy.png" alt="MARCA8">
+   <img class="aside-carousel-img" src="./imgs/Marcas_Eukanuba.png" alt="MARCA9">
+   <img class="aside-carousel-img" src="/imgs/Marcas_Maxxium.png" alt="MARCA10">
+ </div>
+</aside>
+  <script>
+    const swiper = new Swiper('.swiper', {
+
+   loop: true,
+
+   // If we need pagination
+   pagination: {
+     el: '.swiper-pagination',
+   },
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+    },
+    });
+</script>
 
   <main class="main">
     <div class="main-title">
